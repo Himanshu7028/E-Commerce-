@@ -88,7 +88,7 @@ let decrement = (id)=>{
     basket = basket.filter((x)=>x.item!==0);
     generateCartItems();
     localStorage.setItem("data",JSON.stringify(basket))
-   
+//    Decrement Problem 
 }
 let update = (id)=>{
     let search = basket.find((x)=>x.id===id)

@@ -27,6 +27,7 @@ let generateShop = () =>{
 </div>
     </div>`
     }).join("");
+
 };
 generateShop();
 

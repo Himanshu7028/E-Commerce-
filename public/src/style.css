@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+i{
+    cursor: pointer;
+}
+ h2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-style: italic;
+    font-size: 30px;
+  } 
+
+.navbar{
+     display: flex;
+    flex-direction: row;  
+    justify-content:space-between; 
+    background-color: #212529;
+    color: white;
+    padding: 25px 50px;
+}
+.cart{
+    position: relative;
+    background-color: #fff;
+    color:#212529;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 30px;
+    /* margin-right: 10px; */
+    float: left;
+    /* justify-content: end; */
+}
+.cartAmount{
+    position: absolute;
+    font-size: 16px;
+    top: -15px;
+    right:-10px;
+    background-color: #9293cc;
+    padding: 3px;
+    border-radius: 3px;
+}
+.para p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4,220px);
+    gap: 20px;
+    justify-content: center;
+    border-radius: 20px solid #212529;
+    margin-top: 30px;
+}
+@media (max-width:1000px){
+    .shop{
+        grid-template-columns: repeat(2,220px); 
+    }
+}
+@media (max-width:500px){
+    .shop{
+        grid-template-columns: repeat(1,220px); 
+    }
+}
+.item{
+    width: 100%;
+    border: 2px solid #212529;
+    border-radius: 4px;
+}
+.item img{
+    width: 100%;
+    /* border-radius: 2px solid #212529; */
+    height: 50vh;
+    border-radius: 2px 2px 0 0 ;
+}
+
+.product_price{
+    display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;  
+}
+.buttons{
+    display: flex;
+    gap: 7px;
+    margin-left: 7px;
+}
+.product_descriptions{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+strong{
+    max-width: 35vw;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+/* styles rules for label and button */
+
+.text-centre{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.homebtn,.checkout,.removeall{
+    background-color: #212529;
+    color: white;
+    padding: 6px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* #label{
+    margin-top: 10px; also we can use with the id 
+    working same as the class name
+} */
+
+/* style css for shopping-cart */
+
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1,320px);
+    justify-content: center;
+    gap: 15px;
+}
+
+/* style css for cart item */
+
+.cart-item{
+    border: 2px solid #212529 ;
+    border-radius: 5px;
+    display: flex;
+
+}
+
+.title-price-x{
+    width: 190px;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    margin-top: 13px;
+    margin-left: 7px;
+    margin-bottom: 7px;
+}
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cart-item-price{
+    background-color:#212529;
+    color: white;
+    border-radius: 3px;
+    padding: 4px 6px;
+}
+ h3{
+    margin-left: 9px;
+    gap: 6px;
+    margin-top: 7px;
+} 
+.removeall{
+    background-color: red;
+}
+.checkout{
+    background-color: green;
+}
+img{
+    border-radius: 3.6px 3px;
+}
+.bi-person{
+    display: inline-block;
+    font-size: 30px;
+}
+
+/* form css starts here */
+
+
+
+label{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: rgb(36, 40, 40);
+    padding: 23px;
+
+}
+input[type="text"],input[type='password'],input[type='email'],input[type='button']{
+    font-size: larger;
+    font-family: inherit;
+} 
+
+.formy{
+    margin: 23px;
+    padding: 23px;
+}
